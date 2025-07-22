@@ -33,4 +33,19 @@ public class InventoryTest extends BaseTest{
         //Validar que la lista del nodo este vacia
         Assert.assertFalse(inventory.badgeCounterIsDisplayed());
     }
+
+    @Test
+    public void removeProductTest2(){
+        //Step 1: Login
+        login.login(UserData.getUsername("standard"),UserData.getPassword("standard"));
+
+        //Step 2: Click Add Product
+        inventory.clickAddToCart();
+
+        //Step 3: Click Remove
+        inventory.clickRemove();
+
+        //Validar que la lista del nodo este vacia
+        Assert.assertFalse(inventory.badgeCounterIsDisplayed());
+    }
 }
