@@ -30,7 +30,7 @@ jobs:
         run: npm install -g allure-commandline --save-dev
 
       - name: Run smoke test
-        run: mvn clean -Dtest=SmokeTests test
+        run: mvn clean -Dtest=SmokeTest test
 
       - name: Verify Allure content
         run: |
