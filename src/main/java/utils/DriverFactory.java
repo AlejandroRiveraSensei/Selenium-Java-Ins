@@ -26,7 +26,6 @@ public class DriverFactory {
         prefs.put("profile.password_manager_leak_detection",false);
         options.setExperimentalOption("prefs",prefs);
         // Correr chrome en background
-        //options.addArguments("--headless=new");
         // CI/CD Implementation
         if(System.getenv("CI") != null){
             options.addArguments("--headless");
