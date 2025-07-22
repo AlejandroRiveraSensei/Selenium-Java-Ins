@@ -14,6 +14,7 @@ public class BaseTest {
     private WebDriver driver;
 
     //PageObjects
+
     LoginPage login;
     InventoryPage inventory;
     SideMenuPage sideMenu;
