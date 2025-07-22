@@ -45,6 +45,9 @@ public class InventoryTest extends BaseTest{
         //Step 3: Click Remove
         inventory.clickRemove();
 
+        //Step 3: Click Remove
+        inventory.clickRemove();
+
         //Validar que la lista del nodo este vacia
         Assert.assertFalse(inventory.badgeCounterIsDisplayed());
     }
