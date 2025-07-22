@@ -1,0 +1,26 @@
+{
+  "standard": {
+    "type": "standard_user",
+    "password": "secret_sauce"
+  },
+  "locked": {
+    "type": "locked_out_user",
+    "password": "secret_sauce"
+  },
+  "problem": {
+    "type": "problem_user",
+    "password": "secret_sauce"
+  },
+  "performance": {
+    "type": "performance_glitch_user",
+    "password": "secret_sauce"
+  },
+  "error": {
+    "type": "error_user",
+    "password": "secret_sauce"
+  },
+  "visual": {
+    "type": "visual_user",
+    "password": "secret_sauce"
+  }
+}
