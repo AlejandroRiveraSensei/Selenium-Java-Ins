@@ -27,7 +27,15 @@ public class DriverFactory {
         options.setExperimentalOption("prefs",prefs);
         // Correr chrome en background
         //options.addArguments("--headless=new");
-
+        // CI/CD Implementation
+        if(System.getenv("CI") != null){
+            options.addArguments("--headless");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--remote-allow-origins=*"); // CORS error
+            options.addArguments("--disable-gpu");
+            options.addArguments("--user-data-dir=/tmp/chrome-" + System.currentTimeMillis()); // Add temporary directory to avoid errors
+        }
 
         WebDriver driver = new ChromeDriver(options);
         driverThread.set(driver);
