@@ -1,4 +1,4 @@
-name: Run Git Hub Actions Page
+name: SmokeTests
 
 on:
   workflow_dispatch:  # Enable it manual execution
