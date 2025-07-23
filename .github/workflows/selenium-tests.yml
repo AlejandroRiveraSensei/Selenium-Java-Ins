@@ -4,10 +4,10 @@ on:
   workflow_dispatch:  # Enable it manual execution
 
   # ESTO LO COMENTE PARA QUE NO SE EJECUTE EN LOS PUSH DE CODIGO
-  #push:
-  #  branches: [ "master", "main" ]
-  #pull_request:
-  #  branches: [ "master", "main" ]
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
 
 jobs:
   test:

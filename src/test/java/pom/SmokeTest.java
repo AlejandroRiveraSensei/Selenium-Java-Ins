@@ -11,6 +11,7 @@ public class SmokeTest extends BaseTest{
     public void loginSuccess(){
         login.login(UserData.getUsername("standard"), UserData.getPassword("standard"));
         Assert.assertEquals(inventory.getTitleText(),"Products");
+
     }
 
 }
